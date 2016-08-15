@@ -1,0 +1,308 @@
+@import url("./fonts/fonts.css");
+
+
+
+
+
+/****MAIN-NAV****/
+.navbar-inverse
+{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0 !important;
+    transition: background-color 0.2s;
+}
+
+
+.navbar-brand img
+{
+    height: 35px;
+    margin-top: -7.5px;
+    margin-left: 25%;
+    transition: opacity 0.2s;
+}
+
+.navbar-brand img:hover
+{
+    opacity: .65;
+}
+
+
+.navbar ul li a
+{
+    font-family: "sf_ui_displaythin", sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.navbar ul li a:link,
+.navbar ul li a:visited
+{
+    color: white;
+    transition: opacity 0.2s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:active
+{
+    opacity: .65;
+}
+
+
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:10px !important; padding-bottom:0 !important;
+    height: 42px;
+}
+.navbar {min-height:42px !important;}
+/****************/
+
+
+
+@media (max-width: 805px) and (max-width:768px)
+{
+    /*Hail Marry To Remove That Little White Line*/
+    .navbar.navbar-inverse
+    {
+      padding: 0px 0;
+      border: none;
+    }
+    .navbar.navbar-inverse .navbar-nav > li > a,
+    .navbar.navbar-inverse .navbar-brand
+    {
+      color: white;
+    }
+    .navbar.navbar-inverse .navbar-collapse
+    {
+      border: none;
+      box-shadow: none;
+    }
+    .navbar-inverse
+    {
+        border: 0px;
+    }
+
+    /*Actual Styling of Mobile Nav*/
+    .navbar-inverse.active
+    {
+        background-color: rgba(0, 0, 0, 1);
+    }
+    .navbar-brand
+    {
+        z-index: 2;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        text-align: center;
+        margin: auto;
+    }
+
+    .navbar-brand img
+    {
+        height: 35px;
+        width: auto;
+        margin: auto;
+        margin-top: -5px;
+    }
+
+
+    .navbar-toggle
+    {
+        transition: all 0.2s ease-in-out
+    }
+
+    .navbar-toggle:hover
+    {
+        opacity: .65;
+    }
+
+
+    .navbar-toggle.active
+    {
+        transform: rotate(45deg);
+    }
+
+
+    .navbar-toggle .icon-bar
+    {
+        height: 1px;
+        width: 17px;
+        transition: opacity 0.2s;
+    }
+
+
+    .navbar-toggle .icon-bar:nth-of-type(2)
+    {
+        top: 2px;
+    }
+
+    .navbar-toggle .icon-bar
+    {
+        position: relative;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .navbar-toggle.active .icon-bar:nth-of-type(1)
+    {
+        top: 2.5px;
+        transform: rotate(90deg);
+    }
+
+    .navbar-toggle.active .icon-bar:nth-of-type(2)
+    {
+        top: -2.5px;
+    }
+
+
+    .navbar-toggle
+    {
+        z-index: 3;
+    }
+
+
+    .navbar-header
+    {
+        float: none;
+    }
+
+
+    .navbar-left,.navbar-right
+    {
+        float: none !important;
+    }
+
+
+    .navbar-toggle
+    {
+        display: block;
+    }
+
+
+    .navbar-collapse ul
+    {
+        margin-top: -12px;
+    }
+
+
+    .navbar-collapse ul li
+    {
+        opacity: 0;
+        transform: scale(1.1) translateY(-24px);
+        border-bottom: 1px solid #333;
+/*        border-top: 1px solid #333;*/
+        height: 47px !important;
+        line-height: 47px;
+        margin-top: 12px;
+        margin-left: 50px;
+        margin-right: 50px;
+        transition: opacity 0.35s ease-out, transform 0.35s ease-out;
+    }
+    .navbar-collapse.in ul .item1
+    {
+        transition-delay: 50ms;
+    }
+    .navbar-collapse.in ul .item2
+    {
+        transition-delay: 100ms;
+    }
+    .navbar-collapse.in ul .item3
+    {
+        transition-delay: 150ms;
+    }
+    .navbar-collapse.in ul .item4
+    {
+        transition-delay: 200ms;
+    }
+    .navbar-collapse.in ul .item5
+    {
+        transition-delay: 250ms;
+    }
+    .navbar-collapse.in ul .item6
+    {
+        transition-delay: 300ms;
+    }
+
+    .navbar-collapse.in ul li
+    {
+        transform: scale(1.0) translateY(24px);
+        opacity: 1;
+    }
+
+
+    .navbar-collapse.in ul li a
+    {
+        font-size: 17.5px;
+        margin-left: -25px !important;
+    }
+
+
+    .navbar-fixed-top
+    {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+
+    .navbar-collapse.collapse
+    {
+        display: none!important;
+    }
+
+
+    .navbar-nav
+    {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+
+
+    .navbar-nav>li
+    {
+      float: none;
+    }
+
+    .navbar-nav>li>a
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+    .collapse.in
+    {
+        display:block !important;
+    }
+
+
+    .navbar-nav > li > a, .navbar-brand
+    {
+        padding-top:10px !important; padding-bottom:0 !important;
+        height: 47.5px;
+    }
+
+    .navbar
+    {
+        min-height:47.5px !important;
+    }
+
+    .navbar-collapse
+    {
+        border-top:0px !important;
+    }
+
+    .navbar-collapse ul
+    {
+        height: 100vh !important;
+        overflow: auto;
+        border-bottom: 47px solid black;
+    }
+
+
+    html.noscroll, body.noscroll
+    {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+}

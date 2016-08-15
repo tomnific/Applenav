@@ -6,7 +6,7 @@ A near perfect (and customizable) replica of [Apple's](http://www.apple.com) nav
 1) Install [Bootstrap](http://getbootstrap.com/) and set up your navigation bar <br>
 2) Set up your navbar as `navbar-inverse` ***Note:*** it MUST be `navbar-inverse` <br>
 3) Clone this repository <br>
-4) Put the `applnav` folder into the folder where the your rescources folder <br>
+4) Put the `applnav` folder into the folder where your site's resources are <br>
 5) Add this line ***After*** the Bootstrap CSS import, but ***Before*** your custom CSS import in the `<head>` section:
 ```HTML
 <link href="YourResourcesPath/applenav/applenav.css" rel="stylesheet">

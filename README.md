@@ -26,8 +26,6 @@ If you need to know what properties of what class to edit, you can look at the `
 ## Known Issues / Differences From The Orginal
 * On mobile, the dropdown animation is too fast.
   * This is an issue with Bootstrap. Changing animation speeds results in a choppy animation. 
-* The default font is slightly different than the real Apple.com. 
-  * I could not find the actual font Apple used, so I went with another one they're known for using (San Fransisco). Furthermore, you more than likely will end up overwriting the font with the one you want for your site anyways.
   
   
 ## License
